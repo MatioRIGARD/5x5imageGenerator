@@ -11,6 +11,8 @@ Created on Mon Mar 15 12:56:34 2021
 from skimage import data, io, filters
 
 
+
+
 class imgGen:
     def __init__(self, filePath, gridSizeX, gridSizeY):
         
@@ -139,7 +141,9 @@ class imgGen:
             
 
 
-gen = imgGen("degrade4.jpg", 5, 5)
+filePath = "degrade4.jpg"
+
+gen = imgGen(filePath, 5, 5)
 print("hex:")
 print(gen.getStrForBsStream())
 print("\n")
